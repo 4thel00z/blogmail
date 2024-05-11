@@ -94,13 +94,14 @@ func createPost() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>%s</title>
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js/styles/atom-one-dark.css">
-    <script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/core.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/languages/go.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/languages/python.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/languages/bash.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/languages/makefile.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/languages/terraform.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark-dimmed.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/python.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/bash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/makefile.min.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             hljs.highlightAll();
