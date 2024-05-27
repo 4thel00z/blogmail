@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"slices"
 	"strings"
 	"time"
 
@@ -136,6 +137,10 @@ func createPost() {
 		Summary: postSummary,
 	}
 	posts = append(posts, newPost)
+
+	slices.SortFunc(posts, func(a, b Post) int {
+		return strings.Compare(b.Date, a.Date)
+	})
 
 	if err := writePosts("posts.json", posts); err != nil {
 		fmt.Printf("Error writing posts: %s\n", err)
