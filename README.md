@@ -4,6 +4,12 @@
 
 My own simple blogging engine, which powers blackmail.dev
 
+## Installation
+
+```shell
+go install github.com/4thel00z/blogmail/...@latest
+```
+
 ## Features
 
 - Create a post
