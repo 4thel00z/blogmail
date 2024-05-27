@@ -109,6 +109,7 @@ func createPost() {
     </script>
 </head>
 <body>
+    <button class="back-button" onclick="window.history.back();"><i class="fa fa-arrow-left"></i> Back</button>
     <h1>%s</h1>
     <p>Date: %s</p>
     <p>%s</p>
